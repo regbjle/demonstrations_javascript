@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+    <input 
+        type="text" 
+        id="saisie" 
+        value="toto" 
+        onfocus="console.log('focus pris')"
+        onblur="console.log('focus perdu')"
+        onkeydown="console.log('appui d\'une touche')"
+        onkeypress="console.log('maintien d\'une touche')"
+        onkeyup="console.log('relache une touche')"
+        onselect="console.log('select')"
+        onchange="console.log('change')"
+        oninput="console.log('input')"
+        >
+    -->
+
+    <input 
+        type="text" 
+        id="saisie" 
+        value="toto" 
+        onfocus="console.log('focus pris')"
+        onblur="console.log('focus perdu')"
+        oninput="console.log('input')"
+    />
+
+    <input type="text" id="saisie_bonne_pratique" />
+
+    <button onclick="ajouterTexte()">Cliquez moi !</button>
+    <div id="conteneur" class="">
+
+    </div>
+
+    <p id="mon_texte">Un super texte</p>
+    <button onclick="changerCouleur()">Changer</button>
+    <button onclick="cacher()">Cacher</button>
+    <div id="mon_formulaire" class="cache">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium velit incidunt odio numquam a, ullam culpa
+        ea veritatis maiores ab quo totam perferendis iure. Illo consequuntur sunt quis non ut!
+        Facere dolorem vero delectus, quasi nisi sint libero sequi ratione error perferendis sapiente. Ipsam sint
+        praesentium ea accusantium id autem eaque voluptatum! Quas a ipsam voluptatem, reiciendis tempore debitis
+        numquam.
+        Eum saepe odio voluptate rerum numquam facere facilis reprehenderit quis recusandae quidem magni ipsam, mollitia
+        exercitationem harum earum cum tempore accusamus libero aperiam, quam quasi eveniet, sunt quas. Sit, quibusdam?
+        Sed consequatur accusantium obcaecati at assumenda numquam, deleniti delectus sequi impedit aperiam optio
+        suscipit eaque dicta veritatis dolorem odit provident, id ab ratione laborum esse voluptate? Voluptatem fugit
+        laborum quos!
+        Omnis quis molestias quia tenetur, laboriosam perferendis laudantium officiis tempora quisquam quaerat
+        asperiores suscipit facere quo deserunt cupiditate odio libero ipsum incidunt dicta similique. Nisi aut repellat
+        reprehenderit esse excepturi.
+        Incidunt obcaecati ea, dolorem, laborum laboriosam ipsum aliquid quia reprehenderit beatae ad qui consequuntur
+        perspiciatis ipsa quas quis mollitia. A quia incidunt perspiciatis tempore odit blanditiis tempora. Pariatur,
+        labore ipsum.
+        Eos quia ullam dolorem odio sint cupiditate repudiandae porro, labore obcaecati quae cumque quam laboriosam
+        adipisci quo atque libero odit voluptates distinctio nisi saepe, rerum quibusdam nemo aut. Quam, ut?
+        Qui eos ullam odit velit dolorum minus! Laboriosam earum facere voluptate soluta nihil, error architecto
+        perferendis voluptatem? Sequi laborum beatae accusamus quod cupiditate, eius neque maxime maiores reprehenderit
+        quaerat iure.
+        Ad nesciunt eveniet perferendis, exercitationem doloribus corporis iure minima quaerat vel saepe, ea mollitia
+        neque incidunt enim aspernatur, aliquam excepturi unde ratione nam. Illo amet quos iste? Omnis, quas quod?
+        Quos accusamus modi iste consectetur consequatur tempore quasi asperiores consequuntur dolores quia. Distinctio
+        laudantium perspiciatis asperiores voluptates cumque. Distinctio harum excepturi quo doloremque, qui possimus
+        eum et ratione aliquid est.
+        Aut delectus, veritatis saepe culpa, odit sed praesentium expedita modi laudantium eum possimus nulla cum? Animi
+        maiores possimus illum optio ex corrupti ducimus vero cupiditate, recusandae dolores qui impedit autem!
+        Voluptatum neque enim pariatur. Minima, voluptate optio. Atque illo aliquam repudiandae doloremque deserunt
+        molestias iste repellat! Culpa tenetur enim, iusto saepe molestias a voluptatibus excepturi delectus illo
+        laborum similique libero!
+        Nisi tenetur dicta sunt consequuntur veniam reprehenderit consectetur repudiandae aliquam minima distinctio
+        dolorem ex sit doloremque porro, cumque officia quam. Perspiciatis, iure molestias. Delectus illum dolore
+        eveniet fugiat non omnis?
+        Rerum, unde laboriosam nam voluptas exercitationem eveniet! Dignissimos, voluptate odio! Quasi ullam vel
+        repellat voluptatum aliquam nulla non totam maxime. Optio, officiis? Expedita excepturi error porro voluptate
+        esse similique corporis.
+        Eum unde rerum illo voluptate quod asperiores sapiente ducimus fugit fugiat, iure cum, nemo, est officiis qui
+        recusandae eius et? Libero doloremque quia quae omnis dolore, optio ullam minus perferendis!
+        Quasi cupiditate totam illum repellat error vitae sint voluptatibus quisquam doloremque officia? Nisi nobis
+        nesciunt provident nam dignissimos fuga! Laborum qui nisi reprehenderit optio! Sapiente iusto adipisci similique
+        laudantium dolorum?
+        Officiis placeat, ex, sint in doloribus aperiam, error atque non eum enim soluta nesciunt corrupti. Porro, at
+        quam natus eaque nulla quasi deleniti non sequi perspiciatis ducimus corporis! Cum, enim?
+        Animi illo, reiciendis maxime eaque aspernatur pariatur quasi voluptatibus earum quibusdam odio ullam fugit
+        culpa odit architecto eius quisquam. Minus eveniet obcaecati recusandae cupiditate a delectus quia ratione
+        quisquam culpa?
+        Blanditiis labore distinctio in. Animi corrupti debitis itaque ipsum? Neque nulla animi minus, repellendus,
+        incidunt eligendi voluptatibus minima fugit saepe quo, modi omnis soluta itaque magnam ipsa laboriosam
+        reiciendis dolore.
+        Harum dolor perferendis itaque quia commodi cum dolore aliquid ullam, suscipit eaque sint officia consequuntur
+        vel consectetur eum praesentium reiciendis facere asperiores nisi accusantium dolorem consequatur numquam.
+        Similique, rerum distinctio.
+
+    </div>
+    <button onclick="alert('Coucou tout le monde ! ')">Afficher une alerte</button>
+    <button onclick="afficherPrompt()">Afficher un prompt</button>
+    <button onclick="location.href='http://www.google.com'">redirection</button>
+</body>
+
+</html>

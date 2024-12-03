@@ -1,0 +1,3 @@
+.texte_sauvegarde :nth-child(odd){
+    background-color: darkgray;
+}
